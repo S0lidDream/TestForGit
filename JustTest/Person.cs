@@ -27,7 +27,10 @@ namespace JustTest
 
         }
 
-
+        public override string ToString()
+        {
+            return $"Имя: {FirstName}, Фамилия: {LastName}, Возраст: {Age}";
+        }
 
     }
 }
