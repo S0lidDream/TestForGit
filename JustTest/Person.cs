@@ -24,7 +24,6 @@ namespace JustTest
             FirstName = firstName;
             LastName = lastName;
             Age = age;
-
         }
 
         public override string ToString()

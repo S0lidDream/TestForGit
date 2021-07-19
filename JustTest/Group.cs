@@ -20,6 +20,28 @@ namespace JustTest
             groupOfPersons.Add(person);
         }
 
+        public Person this[int position]
+        {
+            get
+            {
+                if(position >=0 && position < groupOfPersons.Count)
+                {
+                    return groupOfPersons[position];
+                }
+                return null;
+            }
+            set
+            {
+                if(position >= 0 && position < groupOfPersons.Count)
+                {
+                    groupOfPersons[position] = value;
+                }
+            }
+        }
+
+
+
+
         public IEnumerator GetEnumerator()
         {
             return groupOfPersons.GetEnumerator();

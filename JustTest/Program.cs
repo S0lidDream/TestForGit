@@ -12,7 +12,6 @@ namespace JustTest
         {
             Person person1 = new Person() { FirstName = "Иван", LastName = "Иванов", Age = 25 };
             Person person2 = new Person() { FirstName = "Петр", LastName = "Петров", Age = 26 };
-
             Group group = new Group() { GroupName = "Группа 1", GroupNumber = 1 };
 
             group.Add(person1);
@@ -22,6 +21,8 @@ namespace JustTest
             {
                 Console.WriteLine(pers);
             }
+            Console.WriteLine();
+            Console.WriteLine(group[1]);
             Console.ReadKey();
         }
     }
