@@ -22,7 +22,7 @@ namespace JustTest
             {
                 Console.WriteLine(pers);
             }
-            Console.Read();
+            Console.ReadKey();
         }
     }
 }
